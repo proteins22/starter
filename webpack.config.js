@@ -5,7 +5,8 @@ const extractCSS = new ExtractTextPlugin('css/[name].css');
 
 module.exports = {
 	entry: {
-		vendors: './src/javascripts/vendor.js',
+		vendors: './src/javascripts/vendors.js',
+		react: './src/javascripts/react.js',
 		app: './src/javascripts/app.js',
 	},
 	output: {
@@ -13,7 +14,14 @@ module.exports = {
 		filename: 'js/[name].js'
 	},
 	module: {
-		loaders: [
+		rules: [
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				use: [
+					'babel-loader',
+				],
+			},
 			{
 				test: /\.scss$/,
 				use: [

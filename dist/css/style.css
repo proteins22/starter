@@ -1,10 +1,1 @@
-body {
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  background-color: white;
-  background-image: none;
-  line-height: 130%; }
-
-h1 {
-  color: red; }
+body{font-family:Roboto,Arial,sans-serif;font-size:16px;font-weight:400;background-color:#fff;background-image:none;line-height:130%}h1{color:red}
