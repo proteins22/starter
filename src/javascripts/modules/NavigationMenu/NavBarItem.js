@@ -23,7 +23,7 @@ class NavBarItem extends React.Component {
 			<NavBar 
 				key={this.props.text} 
 				items={this.props.submenu} 
-			/> 
+			/>
 		)
 	}
 	

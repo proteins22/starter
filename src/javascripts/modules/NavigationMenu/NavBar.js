@@ -1,6 +1,8 @@
 import React from 'react';
+
 import NavBarItem from './NavBarItem';
 import { CSSTransitionGroup } from 'react-transition-group'
+
 
 class NavBar extends React.Component {
 
@@ -18,9 +20,9 @@ class NavBar extends React.Component {
 	render() {
   	let items = this.props.items.map(this.generateItem);
   	return (
-  		<ul className="menu">
-  			{items}
-  		</ul>
+    		<ul className="menu">
+    			{items}
+    		</ul>
   	);
 	}
 }

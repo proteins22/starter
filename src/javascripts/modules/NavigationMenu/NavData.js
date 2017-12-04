@@ -1,15 +1,15 @@
 export const NavData = [
 	{
-		"text": "Link 1",
-		"url": "#"
+		"text": "Home",
+		"url": "/"
 	},
 	{
-		"text": "Link 2",
-		"url": "#"
+		"text": "About",
+		"url": "/about"
 	},
 	{
-		"text": "Link 3",
-		"url": "#",
+		"text": "Topics",
+		"url": "/topics",
 		"submenu": [
 			{
 				"text": "Sublink 1",
