@@ -11,6 +11,7 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
+		publicPath: '../',
 		filename: 'js/[name].js'
 	},
 	module: {
@@ -32,7 +33,14 @@ module.exports = {
 				]
 			}, {
 				test: /\.(woff|woff2|eot|ttf|svg)$/,
-				loader: 'file?name=fonts/[name].[ext]'
+				use: [
+					'file-loader?name=fonts/[name].[ext]'
+				]
+			}, {
+				test: /\.(jpe?g|png|gif|svg)$/i,
+				use: [
+            		'file-loader?hash=sha512&digest=hex&name=images/[hash].[ext]',
+				]
 			}
 		]
 	},

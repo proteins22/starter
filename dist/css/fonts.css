@@ -1,1 +1,5 @@
-@import url(//fonts.googleapis.com/css?family=Roboto:400,400i,700);
+@import url(//fonts.googleapis.com/css?family=Roboto:400,400i,700);@font-face {
+  font-family: 'Dos';
+  src: url(../fonts/perfect_dos_vga_437-webfont.woff2) format("woff2"), url(../fonts/perfect_dos_vga_437-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
