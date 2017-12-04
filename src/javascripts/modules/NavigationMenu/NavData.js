@@ -5,11 +5,7 @@ export const NavData = [
 	},
 	{
 		"text": "About",
-		"url": "/about"
-	},
-	{
-		"text": "Topics",
-		"url": "/topics",
+		"url": "/about",
 		"submenu": [
 			{
 				"text": "Sublink 1",
@@ -32,5 +28,9 @@ export const NavData = [
 				]
 			}
 		]
+	},
+	{
+		"text": "Contact",
+		"url": "/contact"
 	}
 ]

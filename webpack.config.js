@@ -6,8 +6,8 @@ const extractCSS = new ExtractTextPlugin('css/[name].css');
 module.exports = {
 	entry: {
 		vendors: './src/javascripts/vendors.js',
-		react: './src/javascripts/react.js',
-		app: './src/javascripts/app.js',
+		app: './src/javascripts/react.js',
+		main: './src/javascripts/main.js',
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),

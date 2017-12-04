@@ -20,9 +20,11 @@ class NavBar extends React.Component {
 	render() {
   	let items = this.props.items.map(this.generateItem);
   	return (
-    		<ul className="menu">
+      <nav className="menu">
+    		<ul>
     			{items}
     		</ul>
+      </nav>
   	);
 	}
 }
