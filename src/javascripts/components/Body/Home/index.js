@@ -7,7 +7,7 @@ class Home extends React.Component {
 			className: 'home',
 		}
 	}
-
+	
 	render() {
 	    return(
 			<section className={this.state.className}>

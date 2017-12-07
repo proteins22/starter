@@ -9,21 +9,21 @@ export const NavData = [
 		"submenu": [
 			{
 				"text": "Sublink 1",
-				"url": "#",
+				"url": "/about/about1",
 				"submenu": [
 					{
 						"text": "SubSublink 1",
-						"url": "#"
+						"url": "/about/about1/about3"
 					}
 				]
 			},
 			{
 				"text": "Sublink 2",
-				"url":"#",
+				"url":"/about/about2",
 				"submenu": [
 					{
 					"text": "SubSublink 2",
-					"url": "#"
+					"url": "/about/about2/about3"
 					}
 				]
 			}

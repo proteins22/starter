@@ -8,11 +8,11 @@ const app = express();
 const compiler = webpack(webpackConfig);
 
 // Serve static assets
-app.use(express.static(path.resolve(__dirname, '.', '')));
+app.use(express.static(__dirname + '/'))
  
 // Always return the main index.html, so react-router render the route in the client
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '.', '', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '', 'index.html'));
 });
 
 module.exports = app;

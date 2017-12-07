@@ -1,10 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, HashRouter, Link } from "react-router-dom";
+import { Nav, Navbar, NavItem } from 'react-bootstrap';
 
-//Modules
-	//Nav
-	import NavBar from './modules/NavigationMenu/NavBar';
-	import { NavData } from './modules/NavigationMenu/NavData.js';
+// Modules //
+//Nav
+import NavBar from './modules/NavigationMenu/NavBar';
+import { NavData } from './modules/NavigationMenu/NavData.js';
 
 //Header
 import Header from './components/Header/index.js';
@@ -23,13 +24,30 @@ import Footer from './components/Footer/index.js';
 
 
 class App extends React.Component {
+
 	render() {
 		return(
-			<Router>
+			<HashRouter>
 				<div>
-
 					<Header>
-						<NavBar items={ NavData }/> 
+						<Navbar inverse collapseOnSelect>
+						<Navbar.Header>
+							<Navbar.Brand>
+								<span></span>
+							</Navbar.Brand>
+							<Navbar.Toggle />
+						</Navbar.Header>
+						<Navbar.Collapse>
+							<Nav bsStyle="tabs">
+								<NavBar items={ NavData }/> 
+							</Nav>
+
+							<Nav pullRight>
+								<NavItem eventKey={1} href="#">Login</NavItem>
+								<NavItem eventKey={2} href="#">Cart</NavItem>
+							</Nav>
+						</Navbar.Collapse>
+						</Navbar>
 					</Header>
 
 					<Body>
@@ -41,7 +59,7 @@ class App extends React.Component {
 					</Footer>
 
 				</div>
-			</Router>
+			</HashRouter>
 		)
 	}
 }
